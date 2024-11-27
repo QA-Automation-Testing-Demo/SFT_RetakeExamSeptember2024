@@ -50,12 +50,6 @@ function waiterApplicationV4() {
         totalTurnover += itemPrice;
     }
 
-    // Print summary
-    console.log("\nSummary:");
-    console.log(`Tables served: ${tablesServed.size}`);
-    console.log(`Items served: ${itemsServed}`);
-    console.log(`Total turnover: $${totalTurnover.toFixed(2)}`);
-
     // Return summary information as an object
     const summaryInfo = {
         tablesServed: tablesServed.size,
